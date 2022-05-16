@@ -1,0 +1,19 @@
+.estiloItem {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.estiloGretting {
+    margin-top: 4rem;
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
+    color: green;
+    font-size: 60px;
+}
+
+.estiloPieFoto {
+    margin-top: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: green;
+    font-size: 30px;
+}

@@ -1,0 +1,21 @@
+.TotalCompra{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.TituloCarrito{
+    margin-top: 50px;
+    color:gray;
+}
+
+.CarroVacio{
+    color: red;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.FotoCarroVacio{
+ 
+   width: 40%;
+}
