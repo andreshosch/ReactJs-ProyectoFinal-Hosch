@@ -19,3 +19,18 @@
  
    width: 40%;
 }
+
+.botonCarroVacio Link{
+    text-decoration: none;
+    background-color: aquamarine;
+}
+
+.botonCarroVacio button{
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+
+.botonCarroVacio:link{
+    text-decoration: none;
+}
+

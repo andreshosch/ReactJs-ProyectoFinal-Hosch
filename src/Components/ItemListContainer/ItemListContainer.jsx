@@ -1,28 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
- import Spinner from '../Spinner/Spinner'
- import {getProd} from '../../services/productos';
 import { useParams } from 'react-router-dom';
- 
+import { collection, getDocs, query, where} from 'firebase/firestore';
+import BaseDatos from '../../services/Firebase';
  const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-  const[carga, setCarga]=useState(true);
-  const{idCategoria}=useParams();
- 
-  useEffect(() => {
-    getProd(idCategoria)
-      .then(response => {setProducts(response)
-        setCarga(false)})
-      
-      .catch(error => console.log("error: ", error));
-  }, [idCategoria]);
-
-  return (
-    <>
-     {carga? <Spinner/> :<ItemList products={products}></ItemList> 
+  const{idCategoria}=useParams();  
+   
+  const getProd = async (category) =>{
+    try {
+     
+      const document = category ? query(collection(BaseDatos,"Productos"),where('Categoria','==',category)):collection(BaseDatos,"Productos")
+      const col = await getDocs(document)
+      const FirebaseData = col.docs.map((doc) => doc = { id:doc.id,...doc.data()})
+      setProducts(FirebaseData)
+    } catch (error) {
+      console.log(error)
     }
-    </>
-  );
-};
-export default ItemListContainer;
+  }  
+   
+    useEffect(() => {
+      getProd(idCategoria)
+    }, [idCategoria])
+    
+    return (
+      <>
+        { <ItemList products={products} />}
+      </>
+    );
+  };
+  
+  export default ItemListContainer;
+  

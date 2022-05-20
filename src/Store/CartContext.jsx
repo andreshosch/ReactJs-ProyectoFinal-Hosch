@@ -31,14 +31,14 @@ ProductosCarrito:[]
 
   const AcumularCarro=()=>{
     let total=0;
-    productosLista.forEach((e)=>total=total+e.cantidad)
+    productosLista.forEach((e)=>total=total+e.Cantidad)
     
     return total
   }
 
   const TotalCompra=()=>{
     let total=0;
-    productosLista.forEach((e)=>total=total+ parseFloat(e.cantidad*e.Precio))
+    productosLista.forEach((e)=>total=total+ parseFloat(e.Cantidad*e.Precio))
     
     return total
   }

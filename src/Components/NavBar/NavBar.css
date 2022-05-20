@@ -23,3 +23,10 @@
         transform: scale(1.1);
         transition: all 0.5s;
     }
+    .logo{
+       
+       width: 100px;
+       text-align: left;  
+       
+      
+    }

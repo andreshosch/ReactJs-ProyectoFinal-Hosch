@@ -1,4 +1,5 @@
 import React ,{useContext} from 'react'
+import { Link } from 'react-router-dom';
 import CartContext from '../../Store/CartContext';
 import CartItem from "../CartItem/CartItem";
 import "./Cart.css";
@@ -24,9 +25,10 @@ const Cart = () => {
             </div>
           </div>
         ) : (
-          <div>
-            <h3 className='CarroVacio'>Carrito Vacio</h3>
-            <img className='FotoCarroVacio' src='../images/carritoVacio.png'></img>
+          <div className='contenedorCart'>
+           <div> <h3 className='CarroVacio'>Carrito Vacio</h3></div>
+            <div className='botonCarroVacio'><button ><Link to={'/'}>Seguir comprando</Link></button></div>
+            <div><img className='FotoCarroVacio' src='../images/carritoVacio.png'></img></div>
           </div>
         )
     }

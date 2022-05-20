@@ -8,7 +8,7 @@ const ItemDetail = ({ item }) => {
    const [acumulador, setacumulador] =useState(0);
   
      function carrito(countProductosCarro) {
-         Cart.addItem({cantidad: countProductosCarro,...item})
+         Cart.addItem({Cantidad: countProductosCarro,...item})
          setacumulador(countProductosCarro)
          
     }
@@ -18,20 +18,20 @@ const ItemDetail = ({ item }) => {
    
    <div className='contenedorItem'>
    <div className="muestraItem">
-   <div className="imgMuestra1"><img src={item?.imgMuestra}/></div>
-   <div className="imgMuestra1"><img src={item?.imgMuestra1}/></div>
+   <div className="imgMuestra1"><img src={item?.Img2}/></div>
+   <div className="imgMuestra1"><img src={item?.Img3}/></div>
    </div>
    <div className="contenedorImagen">
-   <div className="imagenItem"><img src={item?.img}  alt="Imagen Producto"/></div>
+   <div className="imagenItem"><img src={item?.Img1}  alt="Imagen Producto"/></div>
    <div className="descripcionItem">{item?.Descripcion}</div>
    </div>
    <div className="datosItem">
-   <div className="tituloItem">{item?.titulo}</div>
+   <div className="tituloItem">{item?.Titulo}</div>
      <div className="nombreItem">{item?.Nombre}</div>
      <div className="precioItem">$ {item?.Precio}</div>
-     <div className="stockItem">Stock: {item?.stock}</div>
+     <div className="stockItem">Stock: {item?.Stock}</div>
     
-    {acumulador!==0?(<button  className='botonCarrito'><Link to='/Cart' style={{ color: '#00264D' }}>Ir al Carrito</Link></button>): <ItemCount initial={1} stock={item?.stock} onAdd={carrito}></ItemCount>}
+    {acumulador!==0?(<button  className='botonCarrito'><Link to='/Cart' style={{ color: '#00264D' }}>Ir al Carrito</Link></button>): <ItemCount initial={1} stock={item?.Stock} onAdd={carrito}></ItemCount>}
     
    </div>
      </div>

@@ -1,31 +1,38 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './ItemDetailContainer.css'
 import ItemDetail from '../ItemDetail/ItemDetail'
- import {getItem} from '../../services/productos';
 import { useParams } from 'react-router-dom';
+import BaseDatos from '../../services/Firebase';
 import Spinner from '../Spinner/Spinner'
+import { doc,getDoc } from 'firebase/firestore';
+
+
 
  
  const ItemDetailContainer = () => {
   const [products, setProducts] = useState([]);
   const{id}=useParams();
-  const[carga, setCarga]=useState(true);
  
+    const getItem= async(idItem)=>{
+    try{
+      const item= doc(BaseDatos,"Productos",idItem)
+      const Resultado= await getDoc(item)
+      const detalleItem={id:Resultado.id,...Resultado.data()}
+      setProducts(detalleItem)
+    }catch(error){console.log(error)}
+  
+  }
 
- 
-  useEffect(() => {
-   getItem(id)
-      .then(response => {setProducts(response)
-      setCarga(false)})
-      .catch(error => console.log("error: ", error));
-  }, [id])
-
-  return (
-    <>
-    {carga? <Spinner/> :<ItemDetail item={products}></ItemDetail> }
-
-        
-    </>
-  );
-};
+   
+    useEffect(() => {
+      getItem(id)
+    }, [id])
+    
+    return (
+      <>
+        { <ItemDetail item={products} />}
+      </>
+    );
+    
+   }
 export default ItemDetailContainer;
