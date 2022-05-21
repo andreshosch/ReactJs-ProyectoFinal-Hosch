@@ -1,0 +1,18 @@
+.contenedor {
+    max-width: 1170px;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
+   
+}
+
+/* .info-empresa {
+    padding: 1rem;
+    background-color: lightsteelblue;
+    
+} */
+    h4 {
+        text-align: center;
+        margin-top: 7rem;
+        color:blue;
+    }
+    
