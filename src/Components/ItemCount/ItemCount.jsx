@@ -15,7 +15,6 @@ function ItemCount ({stock,initial,onAdd}) {
       setCount(count - 1);
    }
   }
-  
   return (
     <div>
       <button className='restar' onClick={()=> restaProducto()}>-</button>

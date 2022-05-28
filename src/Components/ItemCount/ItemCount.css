@@ -1,6 +1,7 @@
 .restar,
 .sumar {
     border-style: none;
+    background-color: transparent;
 }
 
 .input {
@@ -11,5 +12,6 @@
 
 .botonCarrito {
     margin-top: 5%;
-    background-color: lightseagreen
+    background-color: lightseagreen;
+    border-color: lightblue;
 }

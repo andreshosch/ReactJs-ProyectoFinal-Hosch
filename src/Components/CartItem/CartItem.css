@@ -2,7 +2,7 @@
     border-style: solid;
     border-color: lightblue;
     margin-top: 20px;
-    background-color:lavender;
+    background-color:#CFEFED;
     max-width: 90%;
     margin-left: 5%;
     justify-content: center;
@@ -29,12 +29,13 @@
 .RemoveItemCart img{
     width: 25px;
     margin-top: 20px;
-    background-color: lavender;
+    
     
 }
 .RemoveItemCart button{
     border-style: none;
     margin-bottom: 15px;
+    background-color: transparent;
     
 }
 

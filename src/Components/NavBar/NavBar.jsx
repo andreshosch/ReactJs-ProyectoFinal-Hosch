@@ -1,11 +1,10 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
- import{Link, NavLink} from 'react-router-dom';
+ import{NavLink} from 'react-router-dom';
 function NavBar() {
   return (
       <>
-      
     <nav className="navbar navbar-expand-lg navbar-light estilo_barra ">
             <div className="container-fluid ">
                 <div className="collapse navbar-collapse " id="navbarSupportedContent">
@@ -17,23 +16,23 @@ function NavBar() {
                             <NavLink to={'/categoria/Cuidado'} className="nav-link" aria-current="page">Cuidado Personal</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/categoria/Suplementos'} className="nav-link">Suplementos y Nutrición</Link>
+                            <NavLink to={'/categoria/Suplementos'} className="nav-link">Suplementos y Nutrición</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/categoria/Bebe'} className="nav-link">Bebe y Maternidad</Link>
+                            <NavLink to={'/categoria/Bebe'} className="nav-link">Bebe y Maternidad</NavLink>
                         </li>
                         
                         <li className="nav-item">
-                            <Link to={'/categoria/Dermocosmetica'} className="nav-link">Dermocosmetica</Link>
+                            <NavLink to={'/categoria/Dermocosmetica'} className="nav-link">Dermocosmetica</NavLink>
                         </li>
                       
                         <li className="nav-item">
-                            <Link to={'/categoria/Perfumes'} className="nav-link">Perfumes y Fragancias</Link>
+                            <NavLink to={'/categoria/Perfumes'} className="nav-link">Perfumes y Fragancias</NavLink>
                         </li>
                        
                     </ul>
                      <CartWidget/>  
-                         
+                                            
                     
                 </div>
                
@@ -42,7 +41,6 @@ function NavBar() {
         </nav>
         </>
   )
-  
 }
 export default NavBar
 

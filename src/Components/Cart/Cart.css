@@ -11,26 +11,41 @@
 
 .CarroVacio{
     color: red;
-    margin-top: 80px;
+    margin-top: 10px;
     font-size: 50px;
 }
 
 .FotoCarroVacio{
  
-   width: 40%;
+   width: 30%;
+   margin-right: 5%;
 }
 
-.botonCarroVacio Link{
+.botonCarroVacio :link{
     text-decoration: none;
-    background-color: aquamarine;
+    background-color: #CFEFED;
 }
 
-.botonCarroVacio button{
-    background-color: aquamarine;
-    margin-top: 50px;
+.botonCarroVacio{
+    margin-top: 10px;  
+    font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.botonCarroVacio:link{
-    text-decoration: none;
+.contenedorVaciarCart{
+    display: flex;
+    justify-content: center;
+    
 }
 
+.VaciarCart button{
+    margin-left: 10px;
+    background-color:lightseagreen;
+    border-color: lightblue;
+   
+}
+
+.VaciarCart :link{
+  text-decoration: none;
+  color: black;
+}

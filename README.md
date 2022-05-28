@@ -36,5 +36,10 @@ En el navegador web se encontra con una pagina principal, la misma cuenta con di
  - REACT JS
  - GITHUB (repositorio del proyecto)
 
+ # Despliegue 
+
+El mismo fue desplegado en versel
+https://ecommerce-ejemplo.vercel.app/
+
 # Autor
 Andrés Hosch

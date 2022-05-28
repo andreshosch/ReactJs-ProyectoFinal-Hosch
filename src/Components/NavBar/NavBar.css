@@ -1,5 +1,5 @@
     .estilo_barra {
-        background-color: cyan;
+        background-color: #CFEFED;
         text-transform: uppercase;
         text-align: center;
         display: flex;
@@ -27,6 +27,4 @@
        
        width: 100px;
        text-align: left;  
-       
-      
     }

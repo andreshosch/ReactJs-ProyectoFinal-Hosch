@@ -1,5 +1,5 @@
  .contenedorItem {
-     background-color: lavender;
+     background-color: #CFEFED;
      width: 80%;
      height: 80%;
      text-align: center;
@@ -18,19 +18,23 @@
      align-items: center;
      margin-left: 20%;
  }
- 
+
  .imgMuestra1 img {
      height: 60%;
      width: 60%;
-     margin-bottom: 80%;
-     margin-top: 2%;
-     margin-left: 40%;
+      margin-bottom: 20%;
+     margin-top: 20%;
+     margin-left: 40%; 
      padding-bottom: 1px;
-     border-color: black;
+     border-color: grey;
      border-width: 2px;
      border-style: solid;
  }
- 
+
+ .imgMuestra_noselect {
+     filter: grayscale(100%);
+ }
+
  .imgMuestra1 img:hover {
      text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
      transform: scale(1.1);
@@ -68,13 +72,17 @@
  }
  
  .botonCarro {
-     background-color: bisque;
      border-style: solid;
-     border-color: brown;
+     
      font-size: 15px;
  }
  
  .botonCarro :link {
      text-decoration: none;
-     color: red;
+    
  }
+ .botonCarro {
+    margin-top: 5%;
+    background-color: lightseagreen;
+    border-color: lightblue;
+}

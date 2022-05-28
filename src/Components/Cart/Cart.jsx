@@ -13,7 +13,7 @@ const Cart = () => {
     {      ProductosCarrito.length !== 0 ?
         (
           <div className=''>
-            <div className=''>
+           
             <h1 className='TituloCarrito'>Carritos de Compras</h1>
             
               {ProductosCarrito.map((item) => <CartItem key={item.id} item={item} />)}
@@ -21,15 +21,21 @@ const Cart = () => {
               
               <br/>
                  <div className='TotalCompra'>Total Compra: $ {TotalCompra()}</div>
-              <button className="VaciarCart" onClick={clear}>Vaciar Carrito</button>
-            </div>
-            <button className="VaciarCart"><Link to={'/Checkout'}>Terminar Compra</Link></button>
-          </div>
+                 <div className='contenedorVaciarCart'>
+                 <div className="VaciarCart">
+                   <button  onClick={clear}>Vaciar Carrito
+                    </button>
+                 </div>
+                 <div className="VaciarCart">
+                   <button ><Link to={'/Checkout'}style={{color:'#000000'}}>Terminar Compra</Link></button></div>
+                 </div>
+                 </div>
         ) : (
           <div className='contenedorCart'>
-           <div> <h3 className='CarroVacio'>Carrito Vacio</h3></div>
-            <div className='botonCarroVacio'><button ><Link to={'/'}>Seguir comprando</Link></button></div>
+            <div className='CarroVacio'>El carrito se encuentra vacio</div>
+            <div className='botonCarroVacio'><Link to={'/'}style={{ color: '#00264D' }} >Seguir Comprando </Link></div>
             <div><img className='FotoCarroVacio' src='../images/carritoVacio.png'></img></div>
+            
           </div>
         )
     }
