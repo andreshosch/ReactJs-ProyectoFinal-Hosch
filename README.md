@@ -35,6 +35,9 @@ En el navegador web se encontra con una pagina principal, la misma cuenta con di
  - JS
  - REACT JS
  - GITHUB (repositorio del proyecto)
+ - Versel (deploy)
+
+
 
  # Despliegue 
 
