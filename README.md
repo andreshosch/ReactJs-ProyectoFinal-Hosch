@@ -8,7 +8,7 @@ La finalidad de este proyecto es que la farmacia cuente con un sitio web para po
 
 # Instalacion 
 
-Pueden descargar el proyecto desde https://github.com/andreshosch/ReactJS-Hosch en formato zip.
+Pueden descargar el proyecto desde https://github.com/andreshosch/ReactJs-ProyectoFinal-Hosch en formato zip.
 
 Una vez descargado y descomprimido, abrir una ventana de comando sobre la carpeta donde se encuentra el package.json y ejecutar el siguiente comando:
 
@@ -39,7 +39,7 @@ En el navegador web se encontra con una pagina principal, la misma cuenta con di
  # Despliegue 
 
 El mismo fue desplegado en versel
-https://ecommerce-ejemplo.vercel.app/
+https://react-js-proyecto-final-hosch.vercel.app/
 
 # Autor
 Andrés Hosch

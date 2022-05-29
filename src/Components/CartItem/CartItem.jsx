@@ -13,7 +13,7 @@ const {removeItem}= useContext(CartContext);
     <div className='CantidadCart'>Cantidad: {item.Cantidad}</div>
     <div className='PrecioCartUnit'>Precio Unitario $ {item.Precio}</div>
     <div className='PrecioCartTotal'>Precio $  {(item.Precio*item.Cantidad).toFixed(2)}</div> 
-    <div className='RemoveItemCart'><button onClick={()=>removeItem(item.id)}><img src='../images/Basura 1.png'></img></button></div>
+    <div className='RemoveItemCart'><button onClick={()=>removeItem(item.id)}><img src='../images/eliminar.png'></img></button></div>
     </div>
   
     </div>
