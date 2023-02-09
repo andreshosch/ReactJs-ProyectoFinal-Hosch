@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="copyright">
-            Copyright© 2022 Copyright Farmacia Tonini - Pagina Desarrollada por <a href="https://www.linkedin.com/in/andr%C3%A9s-alberto-hosch-24a75420a/" target="_black">Andrés Hosch </a>
+            Copyright© 2022 Copyright Farmacia Tonini - Pagina Desarrollada por Andrés Hosch </a>
     
         </div>
         </div>
